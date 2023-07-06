@@ -13,6 +13,10 @@ fn main() {
     let full_name = format!("{} {} is a Rust programmer!", first_name, last_name);
     println!("{}", full_name);
 
+    // string interpolation using panic!()
+    let msg = "A bad error occured!";
+    panic!("Error: {}, {}", msg, "I give up! X(");
+    println!("This line will never get run");
 }
 
 // compile, build and run!
